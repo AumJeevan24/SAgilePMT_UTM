@@ -13,9 +13,7 @@ class RenameImageUrlsToImageUrlInForumsTable extends Migration
      */
     public function up()
     {
-        Schema::table('forums', function (Blueprint $table) {
-            $table->renameColumn('image_urls', 'image_url');
-        });
+
     }
 
     /**

@@ -32,7 +32,7 @@
   </div>
   <!--/ Greetings card -->
 
-  <!-- Transactions -->
+  <!-- Team -->
   <div class="col-lg-8">
     <div class="card">
       <div class="card-header">
@@ -110,40 +110,6 @@
     </div>
   </div>
   <!--/ Transactions -->
-
-  <!-- Weekly Overview Chart -->
-  <div class="col-xl-4 col-md-6">
-    <div class="card">
-      <div class="card-header">
-        <div class="d-flex justify-content-between">
-          <h5 class="mb-1">Burndown Chart</h5>
-          <div class="dropdown">
-            <button class="btn p-0" type="button" id="weeklyOverviewDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="mdi mdi-dots-vertical mdi-24px"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="weeklyOverviewDropdown">
-              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-              <a class="dropdown-item" href="javascript:void(0);">Share</a>
-              <a class="dropdown-item" href="javascript:void(0);">Update</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card-body">
-        <div id="weeklyOverviewChart"></div>
-        <div class="mt-1 mt-md-3">
-          <div class="d-flex align-items-center gap-3">
-            <p class="mb-0">Your activity has increased by 45% better compared to last month</p>
-          </div>
-          <div class="d-grid mt-3 mt-md-4">
-            <button class="btn btn-primary" type="button" style="background-color: #3f58b0;">Details</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--/ Weekly Overview Chart -->
-
   <!-- Total Earnings -->
   <div class="col-xl-4 col-md-6">
     <div class="card">
@@ -255,11 +221,39 @@
               </div>
             </div>
           </div>
-          <div class="card-body mt-mg-1">
-            <h6 class="mb-2">So far</h6>
-            <div class="d-flex flex-wrap align-items-center mb-2 pb-1">
-              <h4 class="mb-0 me-2">Looking Fine!</h4>
+          <div class="col-sm-6">
+            <div class="card h-100">
+            <div class="card-header d-flex align-items-center justify-content-between">
+                <div class="avatar">
+                <div class="avatar-initial bg-secondary rounded-circle shadow">
+                    <i class="mdi mdi-poll mdi-24px"></i>
+                </div>
+                </div>
+                <h4 class= "card-title m-0 me-3">Teams</h4>
+                <div class="dropdown">
+                <button class="btn p-0" type="button" id="totalProfitID" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="mdi mdi-dots-vertical mdi-24px"></i>
+                </button>
+                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="totalProfitID">
+                    <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Share</a>
+                    <a class="dropdown-item" href="javascript:void(0);">Update</a>
+                </div>
+                </div>
             </div>
+            <div class="card-body mt-mg-1">
+                <h6 class="mb-2">Teams that you currently joined</h6>
+                <div class="d-flex flex-wrap align-items-center mb-2 pb-1">
+
+                <div class="d-grid mt-1 mt-md-2">
+                    <a class="btn btn-primary" href="{{ url('/team') }}" style="background-color: #3f58b0;">Teams</a>
+                </div>
+                </div>
+
+                {{--<small>Weekly Project</small>--}}
+            </div>
+            </div>
+        </div>
             {{--<small>Weekly Project</small>--}}
           </div>
         </div>
